@@ -658,6 +658,9 @@ footer .copyright {
     .header .mobile {
         margin-right: -10px;
     }
+    .mobile i {
+        cursor: pointer; 
+    }
     .close {
         top: 33px;
     }
