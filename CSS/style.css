@@ -693,7 +693,7 @@ footer .copyright {
         font-size: 1rem; /** 16px **/      
         font-weight: 700;
         padding: 0.875rem 30px; /** 14px 65px **/
-        margin: 0 3.75rem; /** 60px **/
+        margin: 0 3.75rem 0 0; 
     }
     .navbar {
         margin-top: -18px;
