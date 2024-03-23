@@ -658,6 +658,9 @@ footer .copyright {
     .header .mobile {
         margin-right: -10px;
     }
+    .close {
+        top: 33px;
+    }
     h1 {
         font-size: 2.375rem; /** 38px **/
     }
