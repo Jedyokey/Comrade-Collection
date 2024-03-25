@@ -6,9 +6,10 @@
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
 }
-body {
+.container {
     width: 100%;
-}
+    overflow-x: hidden;
+} 
 h1 {
     font-size: 3.125rem; /** 50px **/
     line-height: 4rem; /** 64px **/
