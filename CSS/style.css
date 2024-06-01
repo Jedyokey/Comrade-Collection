@@ -73,7 +73,7 @@ button.white {
     background-color: #d7d8d2; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 /*     left: 0;
