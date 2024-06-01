@@ -8,7 +8,7 @@
 }
 .container {
     width: 100%;
-    overflow-x: hidden;
+/*     overflow-x: hidden; */
 }     
 h1 {
     font-size: 3.125rem; /** 50px **/
@@ -75,8 +75,8 @@ button.white {
     z-index: 999;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0; 
+/*     left: 0;
+    right: 0;  */
 }
 .logo-1 {
     margin-left: -1.5625rem; /** -25px **/
