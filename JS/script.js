@@ -18,3 +18,21 @@ if(close) {
         document.getElementById("shop-bag").style = 'display: block;'
     })
 }
+
+// Single Product Page
+let mainImage = document.getElementById("mainImg");
+let smallImage = document.getElementsByClassName("small-img");
+
+for (let i = 0; i < smallImage.length; i++) {
+    smallImage[i].addEventListener("click", () => {
+        mainImage.src = smallImage[i].src;
+    }) 
+}
+    // OR Try this
+// smallImage[0].onclick = function() {
+//     mainImage.src = smallImage[0].src;
+// }
+
+// smallImage[1].onclick = function() {
+//     mainImage.src = smallImage[1].src;
+// }
