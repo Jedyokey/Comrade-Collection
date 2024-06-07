@@ -584,6 +584,7 @@ button.white {
 }
 .about-hero h2, .about-hero p {
     color: #fff;
+    text-align: center;
 }
 .about-hero h2 {
     padding-top: 2.75rem;
