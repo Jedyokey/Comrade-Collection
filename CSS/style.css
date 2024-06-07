@@ -307,14 +307,14 @@ button.white {
     text-align: center;
     background-image: url("../images/cta-1.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     width: 100%;
-    height: 40vh;
-}
+    height: 40vh;  
+}   
 .banner h4 {
     color: #fff;
-    font-size: 1.25rem; /** 20px **/
+    font-size: 1.25rem; /** 20px **/            
 }
 .banner h2 {
     color: #fff;
@@ -510,7 +510,6 @@ button.white {
     font-weight: 600;
 }
 
-
 /* Single Product Page */
 .product-details {
     margin-top: 20px;
@@ -571,6 +570,63 @@ button.white {
 }
 
 
+/* About Page */
+.about-hero {
+    background-image: linear-gradient(rgba(12, 12, 13, 0.043), rgba(0, 0, 0, 0.696)), url("../images/about/img3.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.125rem 0.875rem;
+}
+.about-hero h2, .about-hero p {
+    color: #fff;
+}
+.about-hero h2 {
+    padding-top: 2.75rem;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.875rem;
+}
+.about-content .item1 {
+    width: 50%;
+}
+.about-content .item1 img {
+    width: 100%;
+    height: 28.125rem;
+}
+.about-content .item2 {
+   margin-left: 2.5rem;
+   width: 50%;
+}
+.about-content .item2 marquee {
+    font-size: 1.125rem; 
+}
+.about-app {
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-app .video {
+    width: 70%;
+    height: 100%;
+    margin-top: 1.875rem;
+}
+.about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.25rem;
+}
+
+
 /* Blog Page */
 .blog-hero {
     background-image: linear-gradient(rgba(12, 12, 13, 0.043), rgba(0, 0, 0, 0.243)), url("../images/blog/blog-11.jpg");
@@ -610,9 +666,9 @@ button.white {
 .blog img {
     width: 100%;
     height: 18.75rem;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
-.blog .blog-details {
+.blog .blog-details { 
     width: 50%;
 }
 .blog .blog-details p {
@@ -861,6 +917,11 @@ footer .copyright {
         height: 5.625rem;
     }
 
+    /* About Page */
+    .about-content .item2 marquee {
+        font-size: 1rem;
+    }
+
     /* Blog Page */
     .blog-hero {
         height: 40vh;
@@ -1024,6 +1085,29 @@ footer .copyright {
         width: 100%;
         padding-top: 1.875rem;
     } 
+
+    /* About Page */
+    .about-hero {
+        height: 40vh;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .about-content .item1 {
+        width: 100%;
+    }
+    .about-content .item1 img {
+        height: 30vh;
+    }
+    .about-content .item2 {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-app .video {
+        width: 100%; 
+        margin-top: 20px;
+    }
 
     /* Blog Page */
     .blog-hero {
