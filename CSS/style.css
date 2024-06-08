@@ -1081,6 +1081,10 @@ footer .copyright {
     }
     .product-details .single-product-img img {
         width: 100%;
+        height: 35vh;
+    }
+    .product-details .small-img-col .small-img {
+        height: 10vh;
     }
     .product-details .single-product-details {
         width: 100%;
