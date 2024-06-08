@@ -3,21 +3,42 @@ const close = document.getElementById("close");
 const shopBag = document.getElementById("shop-bag");
 const nav = document.getElementById("navbar");
 
-if(bar) {
-    bar.addEventListener("click", () => {
+// Function to toggle the navigation menu
+ const toggleNav = () => {
+    if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+        bar.style.display = 'block';
+        shopBag.style.display = 'block';
+        close.style.display = 'none';
+    } else {   
         nav.classList.add("active");
-        document.getElementById("bar").style = 'display: none;'
-        document.getElementById("shop-bag").style = 'display: none;' 
-    })
+        bar.style.display = 'none';
+        shopBag.style.display = 'none';
+        close.style.display = 'block';
+    }    
+};
+
+if (bar) {
+    bar.addEventListener("click", toggleNav);
 }
 
-if(close) {
-    close.addEventListener("click", () => {
-        nav.classList.remove("active");
-        document.getElementById("bar").style = 'display: block;'
-        document.getElementById("shop-bag").style = 'display: block;'
-    })
+if (close) {
+    close.addEventListener("click", toggleNav);
 }
+
+window.addEventListener("click", (event) => {
+    if (event.target !== nav && event.target !== bar && !nav.contains(event.target)) {
+        nav.classList.remove("active");
+        bar.style.display = 'block';
+        shopBag.style.display = 'block';
+        close.style.display = 'none';
+    }
+});
+
+// Prevent event propagation when clicking inside the nav
+nav.addEventListener("click", (event) => {
+    event.stopPropagation();
+});
 
 // Single Product Page
 let mainImage = document.getElementById("mainImg");
@@ -28,11 +49,3 @@ for (let i = 0; i < smallImage.length; i++) {
         mainImage.src = smallImage[i].src;
     }) 
 }
-    // OR Try this
-// smallImage[0].onclick = function() {
-//     mainImage.src = smallImage[0].src;
-// }
-
-// smallImage[1].onclick = function() {
-//     mainImage.src = smallImage[1].src;
-// }
