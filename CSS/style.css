@@ -778,6 +778,9 @@ button.white {
     margin-bottom: 1.25rem;
     border: 1px solid #e1e1e1;
 }
+.form-details form textarea {
+    resize: none;
+}
 .form-details form button {
     background-color: #088178;
     color: #fff;
