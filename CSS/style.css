@@ -810,6 +810,114 @@ button.white {
 }
 
 
+/* Cart Page */
+.cart {
+    overflow-x: auto;
+}
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+.cart table img {
+    width: 70px;
+    height: 70px;
+}
+.cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+.cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+.cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+.cart table td:nth-child(4), .cart table td:nth-child(5), .cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+.cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 0.625rem 0.3125rem 0.625rem 0.9375rem;
+    outline: none;
+}
+.cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+.cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    padding: 1.25rem 0;
+}
+.cart table tbody tr {
+    /* margin-top: 20px; */
+    transition: all 0.3s ease-in-out;
+}
+.cart table tbody tr:hover {
+    cursor: pointer;
+    background-color: #e1e1e13c;
+    padding-top: 0;
+}
+.cart table tbody tr td {
+    padding: 0.625rem 0 0.4375rem 0;
+}
+.cart table tbody td {
+    font-size: 0.875rem;
+}
+.cart table tbody td a i {
+    color: #088178;
+}
+.cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cart-add .coupon {
+    width: 50%;
+    margin-bottom: 1.875rem;
+}
+.cart-add .coupon h3, .cart-add .subtotal h3 {
+    padding-bottom: 0.9375rem;
+}
+.cart-add .coupon input {
+    padding: 0.625rem 1.25rem;
+    outline: none;
+    width: 60%;
+    margin-right: 0.625rem;
+    border: 1px solid #e2e9e1;
+    font-size: 0.875rem;
+}
+.cart-add .coupon button, .cart-add .subtotal button {
+    background-color: #088178;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+}
+.cart-add .subtotal {
+    width: 50%;
+    margin-bottom: 1.875rem;
+    border: 1px solid #e2e9e1;
+    padding: 1.875rem;
+}
+.cart-add .subtotal table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem;
+}
+.cart-add .subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 0.625rem;
+    font-size: 0.875rem;
+}
+
+
 /** Footer **/
 footer {
     display: flex;
@@ -992,7 +1100,6 @@ footer .copyright {
     .shop-hero {
         height: 40vh;
     }
-
     /* Single Product */
     .product-details .single-product-details {
         padding-top: 0.625rem;
@@ -1026,15 +1133,20 @@ footer .copyright {
     .form-details form {
         width: 50%;
     }
+    /* Cart Page */
+    .cart table td:nth-child(3) {
+        width: 350px;
+        text-align: center;
+    }
 }
 
 
 @media screen and (min-width: 250px) and (max-width: 767px) {
     .section-pad {
-        padding: 1.25rem; /** 20px **/
+        padding: 1.25rem; 
     }
     .header {
-        padding: 0 1.875rem; /** 30px **/
+        padding: 0 1.875rem; 
         height: 3.125rem;
     }  
     .header .mobile {
@@ -1078,10 +1190,10 @@ footer .copyright {
         margin-top: -10px;
     }
     .hero button {
-        font-size: 1rem; /** 16px **/      
+        font-size: 1rem; 
         font-weight: 700;
-        padding: 0.875rem 30px; /** 14px 65px **/
-        margin: 0 3.75rem 0 0; /** 60px **/
+        padding: 0.875rem 30px; 
+        margin: 0 3.75rem 0 0; 
         
     }
     .navbar {
@@ -1107,7 +1219,7 @@ footer .copyright {
     .features .feature-box h6 {
         padding: 0.5625rem 0 0.375rem 0; /** 9px 8px 6px 8px **/
         font-weight: 500;
-        font-size: 0.75rem; /** 12px **/       
+        font-size: 0.75rem;     
     }
     .features .feature-box:nth-child(4) h6 {
         padding-left: 5px;
@@ -1255,5 +1367,21 @@ footer .copyright {
     .form-details form {
         width: 100%;
         margin-bottom: 1.875rem;
+    }
+
+    /* Cart Page */
+    .cart table img {
+        width: 60px;
+        height: 50px;
+    }
+    .cart-add {
+        flex-direction: column;
+    }
+    .cart-add .coupon {
+        width: 100%;
+    }
+    .cart-add .subtotal {
+        width: 100%;
+        padding: 1.25rem;
     }
 } 
